@@ -1,5 +1,5 @@
-// https://www.jsonplaceholder.typicode.com/posts
-fetch('https://www.jsonplaceholder.typicode.com/posts', {
+// https://jsonplaceholder.typicode.com/posts
+fetch('https://jsonplaceholder.typicode.com/posts', {
 	method: 'get'
 }).then(function(response) {
 
