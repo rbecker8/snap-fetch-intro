@@ -1,12 +1,9 @@
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
-	method: 'get'
-}).then(function(response) {
-
-}).catch(function(err) {
-// Error :(
+// https://jsonplaceholder.typicode.com/posts,
+fetch('https://jsonplaceholder.typicode.com/posts').then(function(response) {
+	if(response.ok) {
+		return console.log("Operation Complete!");
+	}
 });
-
-console.log();
